@@ -26,12 +26,12 @@
             <button class="grid-item grid-item-7" onclick="populateDisplay(this)">7</button>
             <button class="grid-item grid-item-8" onclick="populateDisplay(this)">8</button>
             <button class="grid-item grid-item-9" onclick="populateDisplay(this)">9</button>
-            <button class="grid-item grid-item-add" onclick="setOperation(this)">+</button>
-            <button class="grid-item grid-item-minus"onclick="setOperation(this)">-</button>
-            <button class="grid-item grid-item-multiply"onclick="setOperation(this)">X</button>
-            <button class="grid-item grid-item-divide"onclick="setOperation(this)">÷</button>
-            <button class="grid-item grid-item-equals"onclick="equalsOnClick()">=</button>
-            <button class="grid-item grid-item-clear" onclick="clearScreenFromClearButton()">Clear</button>
+            <button class="grid-item grid-item-add" id="operators" onclick="setOperation(this)">+</button>
+            <button class="grid-item grid-item-minus" id="operators" onclick="setOperation(this)">-</button>
+            <button class="grid-item grid-item-multiply" id="operators" onclick="setOperation(this)">X</button>
+            <button class="grid-item grid-item-divide" id="operators" onclick="setOperation(this)">÷</button>
+            <button class="grid-item grid-item-equals" id="operators" onclick="equalsOnClick()">=</button>
+            <button class="grid-item grid-item-clear" id="operators" onclick="clearScreenFromClearButton()">Clear</button>
             <button class="grid-item grid-item-decimal" onclick="populateDisplay(this)">.</button>
 
         </div>

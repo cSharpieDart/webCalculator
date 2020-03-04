@@ -2,9 +2,6 @@ var firstValue;
 var secondValue;
 var operation;
 
-const screen = document.getElementById("screen");
-
-
 function operate(operation, a, b){
 
     let calculatedValue;
@@ -57,6 +54,7 @@ function multiply(a,b){
 
 function populateDisplay(clickedButton){
 
+    let screen = document.getElementById("screen");
     let buttonValue = clickedButton.textContent;
 
     if (screen.innerHTML.length < 7){
@@ -75,11 +73,13 @@ function populateDisplay(clickedButton){
 }
 
 function clearScreenPostOperationSelection(){
+    let screen = document.getElementById("screen");
     screen.innerHTML = "";
 }
 
 function clearScreenFromClearButton(){
     
+    let screen = document.getElementById("screen");
     screen.innerHTML = "";
 
     firstValue = undefined;
@@ -99,10 +99,10 @@ function equalsOnClick(){
 
     let calculatedValue = operate(operation,firstValue,secondValue);
 
-    if(calculatedValue.length > 8){
-
-    }
-
+    let screen = document.getElementById("screen");
     screen.innerHTML = calculatedValue;
+
+    firstValue = calculatedValue;
+    operation = undefined;
 
 }

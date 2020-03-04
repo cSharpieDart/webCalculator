@@ -14,6 +14,16 @@
     line-height: 1;
 }
 
+button {
+    border: 1px solid red; /* around the buttons */
+    color: rgb(105, 95, 95); /* color of button text */
+}
+
+button:hover{
+    cursor: crosshair;
+    color: red;
+    background: white;
+}
 
 .grid-container{
     margin: 20px auto;
@@ -22,7 +32,7 @@
     width: 250px;
     padding: 20px;
     margin: 30px auto;
-    box-shadow: 0px 3px 9px rgb(182, 181, 182);
+    /* box-shadow: 0px 3px 9px rgb(182, 181, 182); */
 }
 
 
@@ -41,11 +51,11 @@
 }
 
 .grid-item-0{
-    grid-area: zero
+    grid-area: zero;
 }
 
 .grid-item-1{
-    grid-area: one
+    grid-area: one;
 }
 
 .grid-item-2 {
@@ -108,12 +118,5 @@
     grid-area: equals;
 }
 
-button {
-    border: 1px solid red; /* around the buttons */
-    color: rgb(105, 95, 95); /* color of button text */
-}
 
-button:hover{
-    cursor: crosshair;
-}
 

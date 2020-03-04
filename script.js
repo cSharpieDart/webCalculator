@@ -9,7 +9,7 @@ function operate(operation, a, b){
 
     switch (operation){
        
-        case "=":
+        case "+":
             calculatedValue = add(a,b);
             break;
 
@@ -17,7 +17,7 @@ function operate(operation, a, b){
             calculatedValue = subtract(a,b);
             break;
 
-        case "/":
+        case "÷":
             calculatedValue = divide(a,b);
             break
         
@@ -35,7 +35,7 @@ function operate(operation, a, b){
 
 function add(a,b){
 
-    return a+b;
+    return Number(a)+Number(b);
 }
 
 function subtract(a,b){

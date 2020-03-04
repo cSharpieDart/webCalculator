@@ -1,4 +1,4 @@
-.screen {
+#screen {
     display: flex; /* makes the test go to bottom, not top */
     height:20%; 
     border-bottom: 2px solid #fcfcfd;
